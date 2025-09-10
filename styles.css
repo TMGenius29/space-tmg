@@ -1,0 +1,116 @@
+ .brdr {position: relative;
+            border-style: double;
+            border-width: 10px;
+            border-color: rgb(255, 208, 0);
+
+        }
+       #offscreen {
+            margin-left: -20px;
+       } 
+        img {
+            width: 1000px;
+            height: auto;
+            
+        }
+        * {
+            
+         margin-left: 20px;
+         color:#fff;
+
+           
+        }
+
+    body {
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(to right, #5206cb, #580357);    
+         }
+.font {
+            font-size:48px;
+            font-weight: 1000;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        .fact {
+            font-size:20px;
+            font-weight: 400;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+   
+        
+        .note {
+            font-size:16px;
+         }
+ .byauthor {
+            font-size:40;
+            font-weight:800;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+/* Float the figure (image + caption) to the right */
+#wraptxt {
+  float: right;
+  margin: 0 0 1rem 1rem;    /* space from surrounding text */
+  max-width: 520px;         /* keeps it from getting too wide on desktop */
+}
+#wraptxtz {
+    float: right;
+}
+
+/* Make it friendly on phones: drop the float */
+@media (max-width: 800px) {
+  #wraptxt { float: none; margin: 1rem 0; max-width: 100%; }
+  #wraptxt img { width: 100%; height: auto; }
+}
+
+    
+.margin {
+  margin-left: -2px;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+/*.caption {
+    margin-left: 600px;
+      font-variant-position: ;
+}*/
+      .alltxt{
+    text-shadow:
+    -2px -2px 0 #000000, /* Top-left shadow */
+    2px -2px 0 #000000,  /* Top-right shadow */
+    -2px 2px 0 #000000,  /* Bottom-left shadow */
+    2px 2px 0 #000000;  
+}
+/* Floating Back-to-Top button styled with your .brdr */
+.back-to-top {
+  position: fixed;          /* overrides .brdr's relative because this is later */
+  right: 16px;
+  bottom: 16px;
+  z-index: 1000;
+
+  margin: 0;                /* cancels your universal margin */
+  padding: 10px 14px;
+  background: rgba(0,0,0,.35);
+  color: #fff;
+  text-decoration: none;
+  font: 600 14px/1.2 Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: none;        /* crisper label than .alltxt */
+  box-shadow: 0 6px 16px rgba(0,0,0,.35);
+}
+
+/* Use your double gold border but a slimmer width for a nicer button */
+.brdr--thin { border-width: 4px; }
+
+.back-to-top:hover { transform: translateY(-2px); }
+@media (prefers-reduced-motion: no-preference) {
+  .back-to-top { transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease; }
+}
+
+/* (Optional) Start hidden and only show after scrolling */
+.back-to-top.is-hidden { opacity: 0; pointer-events: none; }
+
