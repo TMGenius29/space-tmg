@@ -69,7 +69,10 @@
 .margin {
   margin-left: -2px;
 }
-
+.supmargin {
+  margin-left: -2px;
+  font-size: 18px;
+}
 
 
 html {
