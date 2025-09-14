@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tmgenius29.github.io/space-tmg/</loc></url>
+  <url>
+    <loc>https://tmgenius29.github.io/space-tmg/</loc>
+  </url>
 </urlset>
+<url>
+  <loc>https://tmgenius29.github.io/space-tmg/</loc>
+  <lastmod>2025-09-13</lastmod>
+</url>
